@@ -1,0 +1,14 @@
+Dear Researcher, 
+I have had a look at your code and noticed some adjustments that could be made to make the code more efficient. 
+Generally, if a code takes too long to run, it could could sometimes be due to the use of avoidable loops or nested loops. 
+It could also be due to some avoidable operations. Python currently has several packages and functions which simplify a lot of operations. 
+Your code creates a function that takes a number (n) and provides prime numbers up to that number (n). 
+Your current approach could be simplified by using a simplier estimating of the prime numbers: 
+As all prime numbers apart from 2 are odd numbers and all odd numbers divisible by 3 (apart from 1), you can simply determine the prime numbers by using the
+ modulus operator to print all numbers that are not directly divisible by 3 for any value of (n) given.  
+
+This should help to make your code more efficient. An easier way to test your code is to try it on some numbers and print out the output after each line. This can help to easily identify problems in your code.
+Feel free to contact me should you need any further clarification. 
+
+Regards,
+Michael.
