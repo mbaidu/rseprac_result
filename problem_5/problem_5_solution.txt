@@ -1,0 +1,2 @@
+i) The content of fname_out cannot be fully determined as some variables are not clearly defined. (str(Home)+Ozone_2001-01-01_+str("%04d"%simhour).png)
+ii) Home hasn't been defined. Metadata is defined but Frame cannot be determined as the content of the string hasn't been clearly defined.
