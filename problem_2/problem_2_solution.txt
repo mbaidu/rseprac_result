@@ -1,0 +1,22 @@
+Dear Researcher, 
+Thanks for reaching out to us. You can check the number of values in your files by using the word count (wc) command in bash. 
+By using the following the wc command you can determine the number of values in all your files:
+wc values*
+
+To quickly determine the number of files with less than 100 values, you can simply write a bash script to print only outputs with values less than 100 as shown in the attached bash script (Select_Values.sh).
+#!/bin/bash
+for f in values*; do
+if test "$( wc -w < "$f" )" -lt "100"
+then 
+    echo "$f"
+fi
+done
+
+First, you simply use the 'for loop' to loop through all the values files. Using the wild card (*) in the filename helps you to execute a command on all files begining with 'values'.
+You can then use the 'if' statement in the second line to test if the number of values in any of the files is less than 100. 
+This file is then printed to the screen by using the echo command. 
+
+Hope this makes sense. Feel free to contact me if anything is unclear. 
+
+Regards, 
+Michael. 
