@@ -1,0 +1,16 @@
+Dear Researcher, 
+Thanks for reaching out to us. I have renamed the files back to .dat as seen in the folder. 
+You can always simply rename your files by using the bash command: 
+mv filename.csv filename.dat
+
+As you need to do this for multiple files, you can use the wild card (*) in a for loop to help you rename all the files as seen in the attached bash script (Rename_datafile.sh).
+
+#!/bin/bash
+for f in *.csv; do
+    mv -- "$f" "${f%.csv}.dat"
+done
+
+Always feel free to reach out to me whenever you need any further assistance. 
+
+Regards, 
+Michael. 
